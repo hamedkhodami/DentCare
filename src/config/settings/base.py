@@ -33,6 +33,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # third party app
+    'rosetta',
+    # apps
+    'apps.core.apps.CoreConfig',
+    'apps.account.apps.AccountConfig',
+    'apps.teeth.apps.TeethConfig',
+    'apps.catalog.apps.CatalogConfig',
+    'apps.treatment.apps.TreatmentConfig',
+    'apps.pricing.apps.PricingConfig',
+    'apps.public.apps.PublicConfig',
+    'apps.orders.apps.OrdersConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -153,4 +165,15 @@ REDIS_CONFIG = {
     "PORT": os.getenv("REDIS_PORT", "6379"),
     "CHANNEL_NAME": os.getenv("REDIS_CHANNEL_NAME", "market_price"),
 }
+# ---------------------------------------------------------------
+
+
+# --ROSETTA------------------------------------------------------
+ROSETTA_ACCESS_CONTROL_FUNCTION = lambda u: u.is_staff
+# TODO: Change
+# ---------------------------------------------------------------
+
+
+# ---Auth user model---------------------------------------------
+AUTH_USER_MODEL = 'account.User'
 # ---------------------------------------------------------------

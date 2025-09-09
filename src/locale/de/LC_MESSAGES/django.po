@@ -1,0 +1,788 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-09 15:35+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps\account\apps.py:8
+msgid "Account"
+msgstr ""
+
+#: .\apps\account\enums.py:7 .\apps\account\models.py:31
+msgid "Admin"
+msgstr ""
+
+#: .\apps\account\enums.py:8
+msgid "Secretary"
+msgstr ""
+
+#: .\apps\account\enums.py:9 .\apps\orders\models.py:16
+#: .\apps\orders\models.py:64 .\apps\orders\models.py:137
+msgid "Doctor"
+msgstr ""
+
+#: .\apps\account\enums.py:14
+msgid "Male"
+msgstr ""
+
+#: .\apps\account\enums.py:15
+msgid "Female"
+msgstr ""
+
+#: .\apps\account\managers.py:16
+msgid "Users must have an email!"
+msgstr ""
+
+#: .\apps\account\models.py:22
+msgid "Email"
+msgstr ""
+
+#: .\apps\account\models.py:23
+msgid "First Name"
+msgstr ""
+
+#: .\apps\account\models.py:24 .\apps\account\models.py:26
+#: .\apps\account\models.py:46
+msgid "No Name"
+msgstr ""
+
+#: .\apps\account\models.py:25
+msgid "Last Name"
+msgstr ""
+
+#: .\apps\account\models.py:27
+msgid "Role"
+msgstr ""
+
+#: .\apps\account\models.py:28
+msgid "Expertise"
+msgstr ""
+
+#: .\apps\account\models.py:29
+msgid "Country"
+msgstr ""
+
+#: .\apps\account\models.py:30 .\apps\catalog\models.py:53
+#: .\apps\catalog\models.py:74 .\apps\catalog\models.py:114
+#: .\apps\catalog\models.py:148 .\apps\pricing\models.py:26
+#: .\apps\pricing\models.py:38
+msgid "Active"
+msgstr ""
+
+#: .\apps\account\models.py:32
+msgid "Verify"
+msgstr ""
+
+#: .\apps\account\models.py:33
+msgid "Secret Token"
+msgstr ""
+
+#: .\apps\account\models.py:39 .\apps\account\models.py:89
+msgid "User"
+msgstr ""
+
+#: .\apps\account\models.py:40
+msgid "Users"
+msgstr ""
+
+#: .\apps\account\models.py:90
+msgid "Phone number"
+msgstr ""
+
+#: .\apps\account\models.py:91 .\apps\account\models.py:127
+msgid "Gender"
+msgstr ""
+
+#: .\apps\account\models.py:92
+msgid "Bio"
+msgstr ""
+
+#: .\apps\account\models.py:93
+msgid "Picture"
+msgstr ""
+
+#: .\apps\account\models.py:94
+msgid "Degree"
+msgstr ""
+
+#: .\apps\account\models.py:95
+msgid "City"
+msgstr ""
+
+#: .\apps\account\models.py:98
+msgid "User profile"
+msgstr ""
+
+#: .\apps\account\models.py:99
+msgid "Users profile"
+msgstr ""
+
+#: .\apps\account\models.py:122
+msgid "Patient Code"
+msgstr ""
+
+#: .\apps\account\models.py:124
+msgid "Created By"
+msgstr ""
+
+#: .\apps\account\models.py:125
+msgid "Full name"
+msgstr ""
+
+#: .\apps\account\models.py:126
+msgid "Age"
+msgstr ""
+
+#: .\apps\account\models.py:131 .\apps\teeth\models.py:14
+#: .\apps\treatment\models.py:19
+msgid "Patient"
+msgstr ""
+
+#: .\apps\account\models.py:132
+msgid "Patients"
+msgstr ""
+
+#: .\apps\catalog\apps.py:8
+msgid "Catalog"
+msgstr ""
+
+#: .\apps\catalog\enums.py:6 .\apps\catalog\models.py:40
+msgid "Fixed Price"
+msgstr ""
+
+#: .\apps\catalog\enums.py:7
+msgid "Custom Price"
+msgstr ""
+
+#: .\apps\catalog\enums.py:11
+msgid "Simple Form"
+msgstr ""
+
+#: .\apps\catalog\enums.py:12
+msgid "Advanced Form"
+msgstr ""
+
+#: .\apps\catalog\enums.py:16
+msgid "Zirconia"
+msgstr ""
+
+#: .\apps\catalog\enums.py:17
+msgid "Non-Precious Metal"
+msgstr ""
+
+#: .\apps\catalog\enums.py:18
+msgid "Hybrid Ceramic"
+msgstr ""
+
+#: .\apps\catalog\enums.py:19
+msgid "Resin"
+msgstr ""
+
+#: .\apps\catalog\enums.py:23
+msgid "Yes / No"
+msgstr ""
+
+#: .\apps\catalog\enums.py:24
+msgid "Integer"
+msgstr ""
+
+#: .\apps\catalog\enums.py:25
+msgid "Decimal"
+msgstr ""
+
+#: .\apps\catalog\enums.py:26
+msgid "Single Choice"
+msgstr ""
+
+#: .\apps\catalog\enums.py:27
+msgid "Multiple Choice"
+msgstr ""
+
+#: .\apps\catalog\enums.py:28
+msgid "Text Input"
+msgstr ""
+
+#: .\apps\catalog\enums.py:32
+msgid "Base Form"
+msgstr ""
+
+#: .\apps\catalog\enums.py:33
+msgid "Detail Options"
+msgstr ""
+
+#: .\apps\catalog\enums.py:34
+msgid "Extended Layer"
+msgstr ""
+
+#: .\apps\catalog\models.py:9
+msgid "Category Name"
+msgstr ""
+
+#: .\apps\catalog\models.py:10
+msgid "Icon"
+msgstr ""
+
+#: .\apps\catalog\models.py:11
+msgid "UI Color"
+msgstr ""
+
+#: .\apps\catalog\models.py:14
+msgid "Service Category"
+msgstr ""
+
+#: .\apps\catalog\models.py:15
+msgid "Service Categories"
+msgstr ""
+
+#: .\apps\catalog\models.py:29
+msgid "Category"
+msgstr ""
+
+#: .\apps\catalog\models.py:31
+msgid "Service Name"
+msgstr ""
+
+#: .\apps\catalog\models.py:32
+msgid "Service Code"
+msgstr ""
+
+#: .\apps\catalog\models.py:34
+msgid "Pricing Type"
+msgstr ""
+
+#: .\apps\catalog\models.py:47
+msgid "Form Type"
+msgstr ""
+
+#: .\apps\catalog\models.py:52
+msgid "Per Tooth"
+msgstr ""
+
+#: .\apps\catalog\models.py:56 .\apps\catalog\models.py:89
+#: .\apps\pricing\models.py:63 .\apps\pricing\models.py:132
+#: .\apps\treatment\models.py:74
+msgid "Service"
+msgstr ""
+
+#: .\apps\catalog\models.py:57
+msgid "Services"
+msgstr ""
+
+#: .\apps\catalog\models.py:66
+msgid "Material Type"
+msgstr ""
+
+#: .\apps\catalog\models.py:71
+msgid "Material Name"
+msgstr ""
+
+#: .\apps\catalog\models.py:72
+msgid "Material Code"
+msgstr ""
+
+#: .\apps\catalog\models.py:73 .\apps\treatment\models.py:22
+msgid "Description"
+msgstr ""
+
+#: .\apps\catalog\models.py:77 .\apps\catalog\models.py:95
+#: .\apps\pricing\models.py:71 .\apps\pricing\models.py:140
+#: .\apps\treatment\models.py:82
+msgid "Material"
+msgstr ""
+
+#: .\apps\catalog\models.py:78
+msgid "Materials"
+msgstr ""
+
+#: .\apps\catalog\models.py:98
+msgid "Default Material"
+msgstr ""
+
+#: .\apps\catalog\models.py:100
+msgid "Used as default material in forms"
+msgstr ""
+
+#: .\apps\catalog\models.py:104
+msgid "Service Material Compatibility"
+msgstr ""
+
+#: .\apps\catalog\models.py:105
+msgid "Service Material Compatibilities"
+msgstr ""
+
+#: .\apps\catalog\models.py:113
+msgid "Group Name"
+msgstr ""
+
+#: .\apps\catalog\models.py:117 .\apps\catalog\models.py:132
+msgid "Option Group"
+msgstr ""
+
+#: .\apps\catalog\models.py:118
+msgid "Option Groups"
+msgstr ""
+
+#: .\apps\catalog\models.py:134
+msgid "Label"
+msgstr ""
+
+#: .\apps\catalog\models.py:136
+msgid "Input Type"
+msgstr ""
+
+#: .\apps\catalog\models.py:142
+msgid "Option Level"
+msgstr ""
+
+#: .\apps\catalog\models.py:147
+msgid "Required"
+msgstr ""
+
+#: .\apps\catalog\models.py:151 .\apps\treatment\models.py:118
+msgid "Option"
+msgstr ""
+
+#: .\apps\catalog\models.py:152
+msgid "Options"
+msgstr ""
+
+#: .\apps\core\utils.py:42 .\apps\core\utils.py:55
+msgid "Entered data is not correct."
+msgstr ""
+
+#: .\apps\orders\apps.py:8 .\apps\orders\models.py:90
+msgid "Orders"
+msgstr ""
+
+#: .\apps\orders\enums.py:6 .\apps\pricing\enums.py:19
+#: .\apps\treatment\enums.py:6
+msgid "Draft"
+msgstr ""
+
+#: .\apps\orders\enums.py:7 .\apps\orders\models.py:18
+msgid "Submitted"
+msgstr ""
+
+#: .\apps\orders\enums.py:8
+msgid "Paid"
+msgstr ""
+
+#: .\apps\orders\enums.py:9 .\apps\treatment\enums.py:21
+msgid "Cancelled"
+msgstr ""
+
+#: .\apps\orders\enums.py:13
+msgid "Pending"
+msgstr ""
+
+#: .\apps\orders\enums.py:14
+msgid "Success"
+msgstr ""
+
+#: .\apps\orders\enums.py:15
+msgid "Failed"
+msgstr ""
+
+#: .\apps\orders\enums.py:16
+msgid "Refunded"
+msgstr ""
+
+#: .\apps\orders\enums.py:20
+msgid "PayPal"
+msgstr ""
+
+#: .\apps\orders\models.py:19 .\apps\orders\models.py:86
+msgid "Submitted At"
+msgstr ""
+
+#: .\apps\orders\models.py:22 .\apps\orders\models.py:34
+#: .\apps\orders\models.py:72
+msgid "Cart"
+msgstr ""
+
+#: .\apps\orders\models.py:23
+msgid "Carts"
+msgstr ""
+
+#: .\apps\orders\models.py:40 .\apps\orders\models.py:107
+#: .\apps\treatment\models.py:100 .\apps\treatment\models.py:112
+msgid "Case Item"
+msgstr ""
+
+#: .\apps\orders\models.py:43 .\apps\orders\models.py:110
+#: .\apps\treatment\models.py:91
+msgid "Price"
+msgstr ""
+
+#: .\apps\orders\models.py:49
+msgid "Cart Item"
+msgstr ""
+
+#: .\apps\orders\models.py:50
+msgid "Cart Items"
+msgstr ""
+
+#: .\apps\orders\models.py:75 .\apps\orders\models.py:140
+#: .\apps\pricing\models.py:106 .\apps\teeth\models.py:37
+#: .\apps\treatment\models.py:24 .\apps\treatment\models.py:85
+msgid "Status"
+msgstr ""
+
+#: .\apps\orders\models.py:81
+msgid "Total Price"
+msgstr ""
+
+#: .\apps\orders\models.py:89 .\apps\orders\models.py:101
+#: .\apps\orders\models.py:131
+msgid "Order"
+msgstr ""
+
+#: .\apps\orders\models.py:116
+msgid "Order Item"
+msgstr ""
+
+#: .\apps\orders\models.py:117
+msgid "Order Items"
+msgstr ""
+
+#: .\apps\orders\models.py:146
+msgid "PayPal Transaction ID"
+msgstr ""
+
+#: .\apps\orders\models.py:152 .\apps\pricing\models.py:22
+#: .\apps\pricing\models.py:82 .\apps\pricing\models.py:173
+msgid "Amount"
+msgstr ""
+
+#: .\apps\orders\models.py:156
+msgid "Paid At"
+msgstr ""
+
+#: .\apps\orders\models.py:157 .\apps\pricing\models.py:149
+#: .\apps\pricing\models.py:177 .\apps\treatment\models.py:97
+msgid "Note"
+msgstr ""
+
+#: .\apps\orders\models.py:160
+msgid "Payment"
+msgstr ""
+
+#: .\apps\orders\models.py:161
+msgid "Payments"
+msgstr ""
+
+#: .\apps\pricing\apps.py:8
+msgid "Pricing"
+msgstr ""
+
+#: .\apps\pricing\enums.py:6
+msgid "Urgency"
+msgstr ""
+
+#: .\apps\pricing\enums.py:7
+msgid "Special Color"
+msgstr ""
+
+#: .\apps\pricing\enums.py:8
+msgid "Complexity"
+msgstr ""
+
+#: .\apps\pricing\enums.py:9
+msgid "Custom Surcharge"
+msgstr ""
+
+#: .\apps\pricing\enums.py:13
+msgid "Service Only"
+msgstr ""
+
+#: .\apps\pricing\enums.py:14
+msgid "Material Only"
+msgstr ""
+
+#: .\apps\pricing\enums.py:15
+msgid "Service + Material"
+msgstr ""
+
+#: .\apps\pricing\enums.py:20
+msgid "Sent"
+msgstr ""
+
+#: .\apps\pricing\enums.py:21
+msgid "Responded"
+msgstr ""
+
+#: .\apps\pricing\enums.py:22 .\apps\treatment\enums.py:8
+msgid "Rejected"
+msgstr ""
+
+#: .\apps\pricing\models.py:14
+msgid "Surcharge Name"
+msgstr ""
+
+#: .\apps\pricing\models.py:16
+msgid "Surcharge Type"
+msgstr ""
+
+#: .\apps\pricing\models.py:29 .\apps\pricing\models.py:170
+msgid "Surcharge"
+msgstr ""
+
+#: .\apps\pricing\models.py:30
+msgid "Surcharges"
+msgstr ""
+
+#: .\apps\pricing\models.py:37
+msgid "Price List Name"
+msgstr ""
+
+#: .\apps\pricing\models.py:39
+msgid "Valid From"
+msgstr ""
+
+#: .\apps\pricing\models.py:40
+msgid "Valid Until"
+msgstr ""
+
+#: .\apps\pricing\models.py:43 .\apps\pricing\models.py:57
+msgid "Price List"
+msgstr ""
+
+#: .\apps\pricing\models.py:44
+msgid "Price Lists"
+msgstr ""
+
+#: .\apps\pricing\models.py:76
+msgid "Scope"
+msgstr ""
+
+#: .\apps\pricing\models.py:88
+msgid "Service Price"
+msgstr ""
+
+#: .\apps\pricing\models.py:89
+msgid "Service Prices"
+msgstr ""
+
+#: .\apps\pricing\models.py:103 .\apps\pricing\models.py:164
+#: .\apps\treatment\models.py:43 .\apps\treatment\models.py:137
+msgid "Case"
+msgstr ""
+
+#: .\apps\pricing\models.py:111
+msgid "Comment"
+msgstr ""
+
+#: .\apps\pricing\models.py:114 .\apps\pricing\models.py:126
+msgid "Quote Request"
+msgstr ""
+
+#: .\apps\pricing\models.py:115
+msgid "Quote Requests"
+msgstr ""
+
+#: .\apps\pricing\models.py:143
+msgid "Suggested Price"
+msgstr ""
+
+#: .\apps\pricing\models.py:152
+msgid "Quote Item"
+msgstr ""
+
+#: .\apps\pricing\models.py:153
+msgid "Quote Items"
+msgstr ""
+
+#: .\apps\pricing\models.py:180
+msgid "Case Surcharge"
+msgstr ""
+
+#: .\apps\pricing\models.py:181
+msgid "Case Surcharges"
+msgstr ""
+
+#: .\apps\public\apps.py:8
+msgid "Public"
+msgstr ""
+
+#: .\apps\teeth\apps.py:8 .\apps\teeth\models.py:57
+msgid "Teeth"
+msgstr ""
+
+#: .\apps\teeth\enums.py:7
+msgid "Healthy"
+msgstr ""
+
+#: .\apps\teeth\enums.py:8 .\apps\treatment\enums.py:18
+msgid "Planned"
+msgstr ""
+
+#: .\apps\teeth\enums.py:9 .\apps\treatment\enums.py:19
+msgid "In Progress"
+msgstr ""
+
+#: .\apps\teeth\enums.py:10 .\apps\treatment\enums.py:20
+msgid "Done"
+msgstr ""
+
+#: .\apps\teeth\enums.py:11
+msgid "Removed"
+msgstr ""
+
+#: .\apps\teeth\enums.py:16
+msgid "Adjacent"
+msgstr ""
+
+#: .\apps\teeth\enums.py:17
+msgid "Antagonist"
+msgstr ""
+
+#: .\apps\teeth\enums.py:21
+msgid "Upper Right"
+msgstr ""
+
+#: .\apps\teeth\enums.py:22
+msgid "Upper Left"
+msgstr ""
+
+#: .\apps\teeth\enums.py:23
+msgid "Lower Right"
+msgstr ""
+
+#: .\apps\teeth\enums.py:24
+msgid "Lower Left"
+msgstr ""
+
+#: .\apps\teeth\models.py:18 .\apps\teeth\models.py:33
+#: .\apps\teeth\models.py:71
+msgid "Tooth Chart"
+msgstr ""
+
+#: .\apps\teeth\models.py:19
+msgid "Tooth Charts"
+msgstr ""
+
+#: .\apps\teeth\models.py:35
+msgid "Tooth Number"
+msgstr ""
+
+#: .\apps\teeth\models.py:43
+msgid "Quadrant"
+msgstr ""
+
+#: .\apps\teeth\models.py:46
+msgid "Tooth quadrant for UI layout"
+msgstr ""
+
+#: .\apps\teeth\models.py:49
+msgid "Color Code"
+msgstr ""
+
+#: .\apps\teeth\models.py:52
+msgid "Used for UI coloring"
+msgstr ""
+
+#: .\apps\teeth\models.py:56 .\apps\treatment\models.py:49
+msgid "Tooth"
+msgstr ""
+
+#: .\apps\teeth\models.py:77 .\apps\treatment\models.py:143
+msgid "Source Tooth"
+msgstr ""
+
+#: .\apps\teeth\models.py:83 .\apps\treatment\models.py:149
+msgid "Target Tooth"
+msgstr ""
+
+#: .\apps\teeth\models.py:86
+msgid "Relation Type"
+msgstr ""
+
+#: .\apps\teeth\models.py:93
+msgid "Occlusion Link"
+msgstr ""
+
+#: .\apps\teeth\models.py:94
+msgid "Occlusion Links"
+msgstr ""
+
+#: .\apps\treatment\apps.py:8
+msgid "Treatment"
+msgstr ""
+
+#: .\apps\treatment\enums.py:7
+msgid "Approved"
+msgstr ""
+
+#: .\apps\treatment\enums.py:9
+msgid "Completed"
+msgstr ""
+
+#: .\apps\treatment\enums.py:13
+msgid "Adjacent Tooth"
+msgstr ""
+
+#: .\apps\treatment\enums.py:14
+msgid "Antagonist Tooth"
+msgstr ""
+
+#: .\apps\treatment\models.py:21
+msgid "Title"
+msgstr ""
+
+#: .\apps\treatment\models.py:31
+msgid "Treatment Case"
+msgstr ""
+
+#: .\apps\treatment\models.py:32
+msgid "Treatment Cases"
+msgstr ""
+
+#: .\apps\treatment\models.py:53 .\apps\treatment\models.py:68
+msgid "Case Tooth"
+msgstr ""
+
+#: .\apps\treatment\models.py:54
+msgid "Case Teeth"
+msgstr ""
+
+#: .\apps\treatment\models.py:101
+msgid "Case Items"
+msgstr ""
+
+#: .\apps\treatment\models.py:120
+msgid "Value"
+msgstr ""
+
+#: .\apps\treatment\models.py:123
+msgid "Case Item Option"
+msgstr ""
+
+#: .\apps\treatment\models.py:124
+msgid "Case Item Options"
+msgstr ""
+
+#: .\apps\treatment\models.py:152
+msgid "Copy Type"
+msgstr ""
+
+#: .\apps\treatment\models.py:159
+msgid "Mirror Copy"
+msgstr ""
+
+#: .\apps\treatment\models.py:160
+msgid "Mirror Copies"
+msgstr ""
