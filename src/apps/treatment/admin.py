@@ -4,7 +4,8 @@ from .models import (
     CaseToothModel,
     CaseItemModel,
     CaseItemOptionModel,
-    MirrorCopyModel
+    MirrorCopyModel,
+    CaseAttachment
 )
 
 
@@ -71,3 +72,13 @@ class MirrorCopyAdmin(admin.ModelAdmin):
     def target_tooth_display(self, obj):
         return obj.target_tooth.tooth.number
     target_tooth_display.short_description = "Target Tooth"
+
+
+@admin.register(CaseAttachment)
+class CaseAttachmentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'case', 'linked_item', 'file_type', 'uploaded_by', 'is_private', 'created_at')
+    list_filter = ('file_type', 'is_private')
+    search_fields = ('description', 'case__title', 'linked_item__service__name', 'uploaded_by__full_name')
+    readonly_fields = ('created_at', 'updated_at')
+    ordering = ('-created_at',)
+

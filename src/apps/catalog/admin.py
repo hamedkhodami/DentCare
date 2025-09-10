@@ -5,7 +5,9 @@ from .models import (
     MaterialModel,
     ServiceMaterialModel,
     OptionGroupModel,
-    OptionModel
+    OptionModel,
+    OptionChoice,
+    OptionDependency
 )
 
 
@@ -54,4 +56,21 @@ class OptionAdmin(admin.ModelAdmin):
     list_display = ('label', 'group', 'input_type', 'level', 'required', 'active')
     list_filter = ('input_type', 'level', 'required', 'active', 'group')
     search_fields = ('label', 'group__name')
+    readonly_fields = ('created_at', 'updated_at')
+
+
+@admin.register(OptionChoice)
+class OptionChoiceAdmin(admin.ModelAdmin):
+    list_display = ('option', 'label', 'value', 'order')
+    list_filter = ('option__group',)
+    search_fields = ('label', 'value', 'option__label')
+    ordering = ('option', 'order')
+    readonly_fields = ('created_at', 'updated_at')
+
+
+@admin.register(OptionDependency)
+class OptionDependencyAdmin(admin.ModelAdmin):
+    list_display = ('option', 'depends_on', 'effect', 'match_mode')
+    list_filter = ('effect', 'match_mode')
+    search_fields = ('option__label', 'depends_on__label')
     readonly_fields = ('created_at', 'updated_at')

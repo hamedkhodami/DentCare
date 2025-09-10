@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
 from apps.core.models import BaseModel
 
 from . import enums
@@ -153,3 +154,56 @@ class OptionModel(BaseModel):
 
     def __str__(self):
         return self.label
+
+
+class OptionChoice(BaseModel):
+    option = models.ForeignKey(
+        OptionModel,
+        related_name="choices",
+        on_delete=models.CASCADE,
+        verbose_name=_('Option')
+    )
+    value = models.CharField(_('Value'), max_length=200)   # ("A1")
+    label = models.CharField(_('Label'), max_length=200, null=True, blank=True)
+    extra = models.JSONField(_('Extra'), null=True, blank=True)
+    order = models.PositiveIntegerField(_('Order'), default=0)
+
+    class Meta:
+        verbose_name = _('Option Choices')
+        verbose_name_plural = _('Option Choices')
+        unique_together = ("option", "value")
+        ordering = ("order",)
+
+    def str(self):
+        return f"{self.option} :: {self.label or self.value}"
+
+
+class OptionDependency(BaseModel):
+
+    EFFECT_CHOICES = enums.OptionDependencyEffectEnum
+
+    option = models.ForeignKey(
+        OptionModel,
+        related_name="dependencies",
+        on_delete=models.CASCADE,
+        verbose_name=_('Option')
+    )
+    depends_on = models.ForeignKey(
+        OptionModel,
+        related_name="dependents",
+        on_delete=models.CASCADE,
+        verbose_name=_('Depends On')
+    )
+    expected_values = models.JSONField(_('Expected Values'), help_text="list or single value")
+    effect = models.CharField(_('Effect'), max_length=20, choices=EFFECT_CHOICES, default=EFFECT_CHOICES.VISIBILITY)
+    match_mode = models.CharField(_('Match Mode'), max_length=10, choices=[("any", "any"), ("all", "all")], default="any")
+
+    class Meta:
+        verbose_name = _('Option Dependency')
+        verbose_name_plural = _('Option Dependents')
+        indexes = [
+            models.Index(fields=["option", "depends_on"]),
+        ]
+
+    def str(self):
+        return f"{self.option} depends on {self.depends_on} -> {self.expected_values}"

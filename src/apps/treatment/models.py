@@ -1,12 +1,13 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.conf import settings
 
 from apps.core.models import BaseModel
 from apps.account.models import PatientModel, User
 from apps.teeth.models import ToothModel
 from apps.catalog.models import ServiceModel, MaterialModel, OptionModel
 
-from .enums import CaseStatusEnum, CaseItemStatusEnum, MirrorCopyTypeEnum
+from .enums import CaseStatusEnum, CaseItemStatusEnum, MirrorCopyTypeEnum, CaseAttachmentEnum
 
 
 class CaseModel(BaseModel):
@@ -117,7 +118,11 @@ class CaseItemOptionModel(BaseModel):
         related_name='case_usages',
         verbose_name=_('Option')
     )
-    value = models.CharField(_('Value'), max_length=255)
+    value = models.JSONField(
+        _('Value'),
+        default=dict,
+        help_text=_("The selected value is typed (e.g. bool / int / float / list / str)")
+    )
 
     class Meta:
         verbose_name = _('Case Item Option')
@@ -162,3 +167,42 @@ class MirrorCopyModel(BaseModel):
 
     def __str__(self):
         return f"{self.source_tooth.tooth.number} → {self.target_tooth.tooth.number} ({self.get_copy_type_display()})"
+
+
+class CaseAttachment(BaseModel):
+    FILE_TYPES = CaseAttachmentEnum
+
+    case = models.ForeignKey(
+        CaseModel,
+        related_name="attachments",
+        on_delete=models.CASCADE,
+        verbose_name=_('Case')
+    )
+    linked_item = models.ForeignKey(
+        CaseItemModel,
+        related_name="attachments",
+        on_delete=models.CASCADE,
+        verbose_name=_('Linked Item')
+    )
+    uploaded_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        verbose_name=_('Uploaded By')
+    )
+    file = models.FileField(_('ّFile'), upload_to="cases/%Y/%m/%d/")
+    file_type = models.CharField(_('ّFile Type'), max_length=20, choices=FILE_TYPES, default=FILE_TYPES.OTHER)
+    description = models.TextField(_('Description'), blank=True)
+    is_private = models.BooleanField(_('Is Private'), default=True, help_text=_('If True, the download link requires authentication'))
+
+    class Meta:
+        verbose_name = _('Case Attachment')
+        verbose_name_plural = _('Case Attachments')
+        ordering = ("-created_at",)
+        indexes = [
+            models.Index(fields=["case", "linked_item"]),
+        ]
+
+    def str(self):
+        return f"Attachment {self.pk} for Case {self.case_id}"

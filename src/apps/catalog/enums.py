@@ -32,3 +32,10 @@ class OptionLevelEnum(TextChoices):
     BASE = 'base', _('Base Form')
     DETAIL = 'detail', _('Detail Options')
     EXTENDED = 'extended', _('Extended Layer')
+
+
+class OptionDependencyEffectEnum(TextChoices):
+    VISIBILITY = "visibility", _('Visibility')
+    REQUIRED = "required", _('Required')
+    ENABLE = "enable", _('Enable')
+

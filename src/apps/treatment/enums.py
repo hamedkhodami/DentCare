@@ -19,3 +19,10 @@ class CaseItemStatusEnum(TextChoices):
     IN_PROGRESS = 'in_progress', _('In Progress')
     DONE = 'done', _('Done')
     CANCELLED = 'cancelled', _('Cancelled')
+
+
+class CaseAttachmentEnum(TextChoices):
+    IMAGE = "image", _('Image')
+    STL = "stl", _('STL')
+    PDF = "pdf", _('PDF')
+    OTHER = "other", _('Other')
